@@ -17,12 +17,22 @@
                 <h1>App de gastos</h1>
                 <h2>Ingresa cuanto pagó cada persona</h2>
             </div>
-           <form id="formgastos">
-            <label for="nombreInput" class="form-label">Nombre</label>
+
+
+           <form>
+
+               <div class="form-group">
+
+                <label for="nombreInput" class="form-label">Nombre</label>
             <input id="nombreInput" class="form-control" type="text" placeholder="Ingresa el Nombre">
             
             <label for="montoInput" class="form-label">Monto</label>
             <input id="montoInput" class="form-control" type="number" placeholder="Ingresa Monto">
+
+               </div>
+
+               <button type="button" onclick="agregar()">Agregar</button>
+            
            </form>
         </div>
     </div>
