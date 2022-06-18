@@ -1,4 +1,5 @@
-
+let Personas = [];
+let Montos = [];
 
  
 
