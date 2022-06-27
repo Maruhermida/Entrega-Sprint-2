@@ -8,21 +8,7 @@ h1 {
 
 }
 
-h2 {
+h3 {
     text-align: center;
 }
 
-#titulo {
-    width: 700px;
-}
-
-#subtitulo {
-    background-color: rgb(178, 207, 240);
-    width: 600px;
-    height: 200px;
-}
-
-#input {
-    width: 500px;
-    
-}

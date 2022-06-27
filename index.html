@@ -13,12 +13,21 @@
 <body>
     <div class="container-sm" id="titulo">
         <h1>APP DE GASTOS</h1>
-        <div class="container-sm" id="subtitulo">
-            <h2>Ingrese cuánto pagó cada persona</h2>
-            <div class="input-group mb-3" id="input">
-                <input type="text" class="form-control" placeholder="Ingrese nombre" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ingresar</button>
-              </div>
+        <div>
+            <h3>Ingrese cuánto pagó cada persona</h3>
+            <div id="input">
+                <form action="/formulario" method="GET">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" />
+                    <br>
+                    <br>
+                    <label for="apellido">Monto</label>
+                    <input type="number" id="monto" name="monto" placeholder="Ingrese Monto" />
+                    <br>
+                    <br>
+                    <button type="button" onclick=capturar()>Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
    
