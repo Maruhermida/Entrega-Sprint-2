@@ -16,16 +16,10 @@
         <div>
             <h3>Ingrese cuánto pagó cada persona</h3>
             <div id="input">
-                <form action="/formulario" method="GET">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" />
-                    <br>
-                    <br>
-                    <label for="apellido">Monto</label>
-                    <input type="number" id="monto" name="monto" placeholder="Ingrese Monto" />
-                    <br>
-                    <br>
-                    <button type="button" onclick=capturar()>Enviar</button>
+                <form>
+                 <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
+                 <input type="number" name="monto" id="monto" placeholder="Ingrese monto" required>
+                 <button type="submit" onclick="capturar()">Enviar</button>
                 </form>
             </div>
         </div>
