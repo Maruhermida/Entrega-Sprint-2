@@ -1,14 +1,15 @@
-let Personas = [];
-let Montos = [];
+let Lpersonas = [];
+let Lmontos = [];
 let GastoT= 0;
 
-function total() {
+
+function total(mon) {
   GastoT += monto;
 }
 
 function cargar(nom, mon) {
-  Personas.push(nom);
-  Montos.push(mon);
+  Lpersonas.push(nom);
+  Lmontos.push(mon);
 }
 
 function capturar() {
@@ -18,27 +19,23 @@ function capturar() {
 }
 
 function mostrar(nom, mon) {
-  const lista = Montos
+  const lista = Lmontos
   let p = document.createElement("p");
   p.innerText = nom + " " + mon;
   lista.append(p);
 }
 
 function promedio(mon) {
-  let numper = Personas.length;
+  let numper = Lpersonas.length;
   let prom = (mon/numper).toFixed(2);
-  total.innerHTML = mon
-  final.innerHTML = prom
+  total.innerText = mon
+  final.innerText = prom
 }
 
-const persona = document.getElementById("nombre").value;
-const gasto = document.getElementById("monto").value;
 
 function acomodar() {
-  let nom = persona;
-  let mon = toString(gasto);
-  total();
   capturar();
-  mostrar(nom, mon);
-  promedio(mon);
+  total(monto); 
+  mostrar(nombre, monto);
+  promedio(monto);
 }
