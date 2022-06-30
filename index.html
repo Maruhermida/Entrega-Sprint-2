@@ -15,25 +15,30 @@
         <h1>APP DE GASTOS</h1>
         <div>
             <h3>Ingrese cuánto pagó cada persona</h3>
-            <div id="input">
-                <form>
-                 <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre" required>
-                 <input type="number" name="monto" id="monto" placeholder="Ingrese monto" required>
-                 <button type="button" class="btn btn-info" onclick="acomodar()">Enviar</button>
-                </form>
-            </div>
+            <div class="row">
+                <div class="col">
+                  <input type="text" id="nombre" class="form-control" placeholder="Ingrese nombre" aria-label="First name" required>
+                </div>
+                <div class="col">
+                  <input type="number" id="monto" class="form-control" placeholder="Ingrese monto" aria-label="Last name">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <button type="button" class="btn btn-secondary btn-lg" onclick="acomodar()">Enviar</button>
+                </div>
+              </div>  
         </div>
     </div>
     <div>
         <br>
-        <div id="listagastos"></div>
+        <div id="listagastos" class="container-sm"></div>
         <br>
-        <div id="total">Total</div>
+        <div id="total" class="container-sm">Total</div>
         <br>
-        <div id="reparto">Cada uno tiene que poner</div>
+        <div id="reparto" class="container-sm">Cada uno tiene que poner</div>
     </div>
    
 </body>
 </html>
-
 
