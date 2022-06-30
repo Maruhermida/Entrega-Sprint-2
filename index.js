@@ -4,7 +4,7 @@ let GastoT = 0;
 
 
 function total(mon) {
-  GastoT += monto;
+  GastoT += mon;
 }
 
 function cargar(nom, mon) {
@@ -21,7 +21,7 @@ function capturar() {
 function mostrar(nom, mon) {
   let p = document.createElement('p');
   p.innerText = nom + " " + mon;
-  Lmontos.append(p);
+  Lmontos.append('p');
 }
 
 function promedio(mon) {
