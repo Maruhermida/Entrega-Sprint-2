@@ -3,10 +3,6 @@ let Lmontos = [];
 let GastoT = 0;
 
 
-function total(mon) {
-  GastoT += mon;
-}
-
 function cargar(nom, mon) {
   Lpersonas.push(nom);
   Lmontos.push(mon);
@@ -16,6 +12,10 @@ function capturar() {
   const nombre = document.getElementById('nombre').value;
   const monto = document.getElementById('monto').value;
   cargar(nombre, monto);
+}
+
+function total(monto) {
+  GastoT += monto;
 }
 
 function mostrar(nom, mon) {
