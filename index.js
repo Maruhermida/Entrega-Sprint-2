@@ -1,6 +1,6 @@
 let Lpersonas = [];
 let Lmontos = [];
-let GastoT= 0;
+let GastoT = 0;
 
 
 function total(mon) {
@@ -13,16 +13,15 @@ function cargar(nom, mon) {
 }
 
 function capturar() {
-  const nombre = document.getElementById("nombre").value;
-  const monto = document.getElementById("monto").value;
+  const nombre = document.getElementById('nombre').value;
+  const monto = document.getElementById('monto').value;
   cargar(nombre, monto);
 }
 
 function mostrar(nom, mon) {
-  const lista = Lmontos
-  let p = document.createElement("p");
+  let p = document.createElement('p');
   p.innerText = nom + " " + mon;
-  lista.append(p);
+  Lmontos.append(p);
 }
 
 function promedio(mon) {
