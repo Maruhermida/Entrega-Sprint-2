@@ -3,6 +3,8 @@ let Lmontos = [];
 let GastoT = 0;
 
 
+
+
 function cargar(nom, mon) {
   Lpersonas.push(nom);
   Lmontos.push(mon);
@@ -10,25 +12,29 @@ function cargar(nom, mon) {
 
 function capturar() {
   const nombre = document.getElementById('nombre').value;
-  const monto = document.getElementById('monto').value;
+  const monto = document.getElementById('monto');
   cargar(nombre, monto);
+  console.log(monto.value)
+  console.log(monto);
 }
 
-function total(monto) {
-  GastoT += monto;
+function total(mon) {
+  GastoT += mon;
 }
 
 function mostrar(nom, mon) {
+  listagastos = document.getElementById('listagastos')
   let p = document.createElement('p');
-  p.innerText = nom + " " + mon;
-  Lmontos.append('p');
+  p.textContent = nom + "debe" + mon;
+  listagastos.append(p);
 }
 
 function promedio(mon) {
   let numper = Lpersonas.length;
   let prom = (mon/numper).toFixed(2);
-  total.innerText = mon
-  final.innerText = prom
+  const total =  document.getElementById('total');
+  const reparto = document.getElementById('reparto');
+  
 }
 
 
