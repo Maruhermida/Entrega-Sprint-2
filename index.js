@@ -13,14 +13,16 @@ function cargar(nom, mon) {
 function capturar() {
   const nombre = document.getElementById('nombre').value;
   const monto = document.getElementById('monto');
-  cargar(nombre, monto.value);
-  console.log(monto.value)
-  console.log(monto);
+  cargar(nombre, parseInt(monto.value));
+  console.log(monto.value);
 }
 
 function total(mon) {
   GastoT += mon;
 }
+
+/* Problema llamando a las variables
+*/
 
 function mostrar(nom, mon) {
   listagastos = document.getElementById('listagastos')
